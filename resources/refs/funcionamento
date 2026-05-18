@@ -1,0 +1,15 @@
+php artisan serve: cria servidor
+
+
+php artisan migrate cria tabelas se nao tiver
+ 
+php artisan make:controller faz um controller
+
+php artisan make:controller --resource cria todos os gets e posts e put e deletes
+
+
+
+
+php artisan make:factory UserFactory -- Cria uma fabrica para criar usuarios
+
+php artisan db:seed -- Formula usuarios e popula os dados
