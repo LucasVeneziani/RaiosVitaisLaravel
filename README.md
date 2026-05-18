@@ -61,6 +61,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 php artisan migrate
 php artisan db:seed
 php artisan serve
+php artisan optimize:clear
 
 Admin      → admin@raiosvitais.com      / admin123
 Funcionário → funcionario@raiosvitais.com / func123

@@ -12,6 +12,7 @@
     <nav>
         <a href="<?php echo e(route('home')); ?>" class="brand">Raios Vitais</a>
         <ul>
+            <li><a href="<?php echo e(route('paineladmin.index')); ?>">PaginaPrincipal</a></li>
             <li><a href="<?php echo e(route('users.index')); ?>">Usuários</a></li>
             <?php if(session('auth_role') === 'admin'): ?>
             <li><a href="<?php echo e(route('funcionarios.index')); ?>">Funcionários</a></li>

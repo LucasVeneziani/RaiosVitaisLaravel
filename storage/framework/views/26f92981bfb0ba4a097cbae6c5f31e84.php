@@ -32,4 +32,4 @@ unset($__defined_vars, $__key, $__value); ?>
     <span class="text-neutral-400 dark:text-neutral-600">// </span><?php echo e($message); ?>
 
 </div>
-<?php /**PATH D:\2026\Fatec\DesenvolvimentoWeb\16-03-2026\sitebasicolaravel\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/components/empty-state.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\2026\Fatec\DesenvolvimentoWeb\PacoteVitalicio\RaiosVitaisTres\RaiosVitaisLaravel\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/components/empty-state.blade.php ENDPATH**/ ?>
