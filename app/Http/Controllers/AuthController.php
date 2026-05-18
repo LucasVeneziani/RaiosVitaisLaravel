@@ -29,7 +29,7 @@ class AuthController extends Controller
                 'auth_name' => $admin->name,
                 'auth_role' => 'admin',
             ]);
-            return redirect()->route('home')->with('message', 'Bem-vindo, ' . $admin->name . '!');
+            return redirect()->route('paineladmin.index')->with('message', 'Bem-vindo, ' . $admin->name . '!');
         }
 
         // Check funcionarios table
@@ -40,7 +40,7 @@ class AuthController extends Controller
                 'auth_name' => $funcionario->name,
                 'auth_role' => 'funcionario',
             ]);
-            return redirect()->route('home')->with('message', 'Bem-vindo, ' . $funcionario->name . '!');
+            return redirect()->route('paineladmin.index')->with('message', 'Bem-vindo, ' . $funcionario->name . '!');
         }
 
         return redirect()->back()
