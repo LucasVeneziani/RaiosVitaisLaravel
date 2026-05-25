@@ -13,7 +13,7 @@
         <a href="{{ route('home') }}" class="brand">Raios Vitais</a>
         <ul>
             <li><a href="{{ route('paineladmin.index') }}">PaginaPrincipal</a></li>
-            <li><a href="{{ route('users.index') }}">Usuários</a></li>
+            <li><a href="{{ route('clientes.index') }}">Clientes</a></li>
             @if(session('auth_role') === 'admin')
             <li><a href="{{ route('funcionarios.index') }}">Funcionários</a></li>
             @endif

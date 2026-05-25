@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('assets/css/style.css')); ?>">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Raios Vitais</title>
 </head>
-<body class="bg-contain scroll-smooth min-h-screen bg-fixed bg-repeat bg-center" style="background-image: url('{{ asset('assets/img/fundo.png') }}')">
+<body class="bg-contain scroll-smooth min-h-screen bg-fixed bg-repeat bg-center" style="background-image: url('<?php echo e(asset('assets/img/fundo.png')); ?>')">
     <!-- Navbar -->
      <header class="fixed top-0 right-0 left-0 z-50 shadow-md">
         <nav class="flex items-center justify-between relative bg-white w-full py-4 px-6 shadow-md">
             <div class="flex items-center space-x-4 w-full relative">
                 <div class="flex items-center justify-center ml-4 mt-2 mb-2">
-                    <img class="size-auto rounded-full" src="{{ asset('assets/img/Logo.png') }}" alt="Logo Raios Vitais">
+                    <img class="size-auto rounded-full" src="<?php echo e(asset('assets/img/Logo.png')); ?>" alt="Logo Raios Vitais">
                 </div>
                 <div class="text-center w-full relative mr-4">
                     <h1 class="text-pink-500 text-3xl font-semibold">Raios Vitais</h1>
@@ -28,7 +28,7 @@
                     <li>
                         <button class="flex items-center justify-center cursor-pointer text-white bg-pink-500/80 hover:bg-pink-500 rounded-full shadow-md px-4 py-2">
                             <a href="https://wa.me/+5511992179843" class="flex items-center justify-center w-full h-full">
-                                <img class="size-7 mr-2" src="{{ asset('assets/img/calendario.png') }}" alt="Icone de calendario">
+                                <img class="size-7 mr-2" src="<?php echo e(asset('assets/img/calendario.png')); ?>" alt="Icone de calendario">
                                 Agendar pelo WhatsApp
                             </a>
                         </button>
@@ -51,7 +51,7 @@
                         <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
-                        <img class="size-auto" src="{{ asset('assets/img/slide1.jpg') }}" alt="Imagem de slide 1"/>
+                        <img class="size-auto" src="<?php echo e(asset('assets/img/slide1.jpg')); ?>" alt="Imagem de slide 1"/>
                     </div>
                 </article>
                 <article class="flex md:flex-row shrink-0 md:gap-4 w-full items-center text-center relative">
@@ -64,7 +64,7 @@
                         <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
-                        <img class="size-auto" src="{{ asset('assets/img/slide2.jpg') }}" alt="Imagem de slide 2"/>
+                        <img class="size-auto" src="<?php echo e(asset('assets/img/slide2.jpg')); ?>" alt="Imagem de slide 2"/>
                     </div>
                 </article> 
                 <article class="flex md:flex-row shrink-0 md:gap-4 w-full items-center text-center relative">
@@ -77,7 +77,7 @@
                         <button class="text-white font-semibold bg-rose-400 hover:bg-rose-500 rounded-full shadow-md py-2 px-4 mt-4">Saiba mais</button>
                     </div>
                     <div class="flex w-1/2 relative">
-                        <img class="size-auto" src="{{ asset('assets/img/slide3.jpg') }}" alt="Imagem de slide 3"/>
+                        <img class="size-auto" src="<?php echo e(asset('assets/img/slide3.jpg')); ?>" alt="Imagem de slide 3"/>
                     </div>
                 </article>
             </div>
@@ -96,7 +96,7 @@
                 <div class="grid grid-cols-2 lg:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Relaxamento nas Costas</h3>
-                        <img src="{{ asset('assets/img/servico1.jpg') }}" alt="Relaxamento nas Costas" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/servico1.jpg')); ?>" alt="Relaxamento nas Costas" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Alivia tensões musculares e promove uma sensação profunda de relaxamento, 
                             ideal para quem sofre com estresse e dores na região.
@@ -104,7 +104,7 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Tratamento Facial</h3>
-                        <img src="{{ asset('assets/img/servico2.jpeg') }}" alt="Tratamento Facial" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/servico2.jpeg')); ?>" alt="Tratamento Facial" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Cuida da pele do rosto, ajudando na hidratação, revitalização 
                             e proporcionando uma aparência mais saudável e iluminada.
@@ -112,7 +112,7 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Spa dos Pés</h3>
-                        <img src="{{ asset('assets/img/servico3.jpeg') }}" alt="Spa dos Pés" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/servico3.jpeg')); ?>" alt="Spa dos Pés" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Proporciona descanso e bem-estar, aliviando o cansaço 
                             e deixando os pés mais leves, macios e relaxados.
@@ -120,21 +120,21 @@
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Massagem Relaxante</h3>
-                        <img src="{{ asset('assets/img/slide1.jpg') }}" alt="Massagem Relaxante" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/slide1.jpg')); ?>" alt="Massagem Relaxante" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Proporciona alívio para tensões e estresse, promovendo um estado de relaxamento profundo.
                         </p>
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Hidratação Corporal</h3>
-                        <img src="{{ asset('assets/img/slide2.jpg') }}" alt="Hidratação Corporal" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/slide2.jpg')); ?>" alt="Hidratação Corporal" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Nutre e hidrata a pele do corpo, deixando-a mais macia, suave e revitalizada.
                         </p>
                     </article>
                     <article class="flex-1 bg-white/50 rounded-lg shadow-md p-4">
                         <h3 class="text-xl text-center font-bold text-pink-500 h-auto">Limpeza de Pele</h3>
-                        <img src="{{ asset('assets/img/slide3.jpg') }}" alt="Limpeza de Pele" class="size-auto rounded-lg mt-2">
+                        <img src="<?php echo e(asset('assets/img/slide3.jpg')); ?>" alt="Limpeza de Pele" class="size-auto rounded-lg mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Remove impurezas e células mortas, ajudando a desobstruir os poros e melhorar a textura da pele.
                         </p>
@@ -150,7 +150,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 text-center gap-6 py-2 px-4 mt-6 w-full">
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
                         <h4 class="text-xl text-center font-bold text-pink-500">Fernanda</h4>
-                        <img src="{{ asset('assets/img/profissional1.jpg') }}" alt="Profissional 1" class="size-2/3 rounded-full mt-2">
+                        <img src="<?php echo e(asset('assets/img/profissional1.jpg')); ?>" alt="Profissional 1" class="size-2/3 rounded-full mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Pedóloga experiente, especializada em cuidados com os pés. Atua com foco na saúde,
                             conforto e bem-estar, oferecendo atendimentos que unem técnica e atenção.
@@ -158,7 +158,7 @@
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
                         <h4 class="text-xl text-center font-bold text-pink-500">Alice</h4>
-                        <img src="{{ asset('assets/img/profissional2.jpg') }}" alt="Profissional 2" class="size-2/3 rounded-full mt-2">
+                        <img src="<?php echo e(asset('assets/img/profissional2.jpg')); ?>" alt="Profissional 2" class="size-2/3 rounded-full mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Esteticista dedicada, apaixonada por realçar a beleza e a autoestima. Realiza 
                             procedimentos faciais e corporais com foco em qualidade e resultados visíveis.
@@ -166,7 +166,7 @@
                     </article>
                     <article class="flex flex-col items-center bg-white/50 rounded-lg shadow-md p-4">
                         <h4 class="text-xl text-center font-bold text-pink-500">Debora</h4>
-                        <img src="{{ asset('assets/img/profissional3.jpg') }}" alt="Profissional 3" class="size-2/3 rounded-full mt-2">
+                        <img src="<?php echo e(asset('assets/img/profissional3.jpg')); ?>" alt="Profissional 3" class="size-2/3 rounded-full mt-2">
                         <p class="text-rose-500 font-semibold mt-2">
                             Massagista, especialista em relaxamento e alívio de tensões musculares. 
                             Seus atendimentos combinam técnica e sensibilidade, promovendo bem-estar físico e mental.
@@ -183,9 +183,9 @@
                 <h2 class="text-3xl font-extrabold text-pink-600 text-center mt-4 mb-4">Contato</h2>
                 <div class="flex items-start justify-center w-2/3 gap-4 mb-2">
                     <aside class="flex flex-col items-start justify-start">
-                        <img src="{{ asset('assets/img/telefone.png') }}" alt="icone de telefone" class="size-20 inline-block mr-2">
-                        <img src="{{ asset('assets/img/email.png') }}" alt="icone de email" class="size-20 inline-block mr-4">
-                        <img src="{{ asset('assets/img/gps.png') }}" alt="icone de endereco" class="size-20 inline-block mr-4">
+                        <img src="<?php echo e(asset('assets/img/telefone.png')); ?>" alt="icone de telefone" class="size-20 inline-block mr-2">
+                        <img src="<?php echo e(asset('assets/img/email.png')); ?>" alt="icone de email" class="size-20 inline-block mr-4">
+                        <img src="<?php echo e(asset('assets/img/gps.png')); ?>" alt="icone de endereco" class="size-20 inline-block mr-4">
                     </aside>
                     <aside class="flex flex-col items-start justify-center gap-10 pl-2 mt-2">
                         <p class="text-rose-500 text-xl">(11) 2205-5026<br> (11) 99217-9843</p>
@@ -195,15 +195,15 @@
                 </div>
                 <div class="flex items-center justify-center text-center gap-12 px-4 w-full">
                     <a href="https://www.instagram.com/raiosvitais/" class="flex items-center justify-center text-center">
-                        <img src="{{ asset('assets/img/instagram.png') }}" alt="icone de instagram" class="size-20 inline-block">
+                        <img src="<?php echo e(asset('assets/img/instagram.png')); ?>" alt="icone de instagram" class="size-20 inline-block">
                         <span class="text-rose-500 text-xl">Instagram</span>
                     </a>
                     <a href="https://wa.me/+5511992179843" class="flex items-center justify-center text-center">
-                        <img src="{{ asset('assets/img/whatsapp.png') }}" alt="icone de whatsapp" class="size-20 inline-block">
+                        <img src="<?php echo e(asset('assets/img/whatsapp.png')); ?>" alt="icone de whatsapp" class="size-20 inline-block">
                         <span class="text-rose-500 text-xl">WhatsApp</span>
                     </a>
                     <a href="https://www.facebook.com/raiosvitais" class="flex items-center justify-center text-center">
-                        <img src="{{ asset('assets/img/facebook.png') }}" alt="icone de facebook" class="size-20 inline-block">
+                        <img src="<?php echo e(asset('assets/img/facebook.png')); ?>" alt="icone de facebook" class="size-20 inline-block">
                         <span class="text-rose-500 text-xl">Facebook</span>
                     </a>
                 </div>
@@ -212,7 +212,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-end">
-                <img src="{{ asset('assets/img/clinica.jpg') }}" alt="Fachada Raios Vitais" class="size-auto">
+                <img src="<?php echo e(asset('assets/img/clinica.jpg')); ?>" alt="Fachada Raios Vitais" class="size-auto">
             </div>
         </div>
         <div class="flex items-center justify-center">
@@ -224,4 +224,4 @@
         </div>
     </footer>
 </body>
-</html>
+</html><?php /**PATH D:\2026\Fatec\DesenvolvimentoWeb\PacoteVitalicio\RaiosVitaisQuatro\RaiosVitaisLaravel\resources\views/home.blade.php ENDPATH**/ ?>

@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import "tailwindcss";
 
-body{
-    font-family: 'Abel', sans-serif;
+body {
+    font-family: 'Cinzel Decorative', serif;
 }
 
 ul{

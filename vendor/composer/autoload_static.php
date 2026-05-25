@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c
+class ComposerStaticInit359fa55aeee8188426504836c70c912f
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -559,8 +559,18 @@ class ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c
     );
 
     public static $classMap = array (
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
+        'App\\Http\\Controllers\\ClienteController' => __DIR__ . '/../..' . '/app/Http/Controllers/ClienteController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
-        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Http\\Controllers\\FuncionarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/FuncionarioController.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\PainelAdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/PainelAdminController.php',
+        'App\\Http\\Middleware\\AdminOnly' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminOnly.php',
+        'App\\Http\\Middleware\\RequireAuth' => __DIR__ . '/../..' . '/app/Http/Middleware/RequireAuth.php',
+        'App\\Models\\Admin' => __DIR__ . '/../..' . '/app/Models/Admin.php',
+        'App\\Models\\Agenda' => __DIR__ . '/../..' . '/app/Models/Agenda.php',
+        'App\\Models\\Cliente' => __DIR__ . '/../..' . '/app/Models/Cliente.php',
+        'App\\Models\\Funcionario' => __DIR__ . '/../..' . '/app/Models/Funcionario.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
@@ -685,6 +695,7 @@ class ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\AdminSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
@@ -7264,9 +7275,9 @@ class ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit53b5d56b3b7e3cbac1713e68c8850f6c::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit359fa55aeee8188426504836c70c912f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit359fa55aeee8188426504836c70c912f::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit359fa55aeee8188426504836c70c912f::$classMap;
 
         }, null, ClassLoader::class);
     }

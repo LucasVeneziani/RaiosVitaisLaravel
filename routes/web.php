@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PainelAdminController;
 use App\Http\Controllers\FuncionarioController;
@@ -19,14 +19,14 @@ Route::get('/paineladmin', [PainelAdminController::class, 'index'])->name('paine
 // ── Protected: any authenticated user (admin OR funcionario) ────────────────
 Route::middleware('require.auth')->group(function () {
 
-    // Users CRUD — accessible by admins and employees
-    Route::get('/users',             [UserController::class, 'index'])->name('users.index');
-    Route::get('/users/create',      [UserController::class, 'create'])->name('users.create');
-    Route::post('/users',            [UserController::class, 'store'])->name('users.store');
-    Route::get('/users/{user}',      [UserController::class, 'show'])->name('users.show');
-    Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
-    Route::put('/users/{user}',      [UserController::class, 'update'])->name('users.update');
-    Route::delete('/users/{user}',   [UserController::class, 'destroy'])->name('users.destroy');
+    // Clientes CRUD — accessible by admins and employees
+    Route::get('/clientes',                [ClienteController::class, 'index'])->name('clientes.index');
+    Route::get('/clientes/create',         [ClienteController::class, 'create'])->name('clientes.create');
+    Route::post('/clientes',               [ClienteController::class, 'store'])->name('clientes.store');
+    Route::get('/clientes/{cliente}',      [ClienteController::class, 'show'])->name('clientes.show');
+    Route::get('/clientes/{cliente}/edit', [ClienteController::class, 'edit'])->name('clientes.edit');
+    Route::put('/clientes/{cliente}',      [ClienteController::class, 'update'])->name('clientes.update');
+    Route::delete('/clientes/{cliente}',   [ClienteController::class, 'destroy'])->name('clientes.destroy');
 
     // Funcionários CRUD — admin only
     Route::middleware('admin.only')->group(function () {
