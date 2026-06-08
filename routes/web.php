@@ -4,6 +4,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PainelAdminController;
 use App\Http\Controllers\FuncionarioController;
+use App\Http\Controllers\AgendaController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,6 +28,15 @@ Route::middleware('require.auth')->group(function () {
     Route::get('/clientes/{cliente}/edit', [ClienteController::class, 'edit'])->name('clientes.edit');
     Route::put('/clientes/{cliente}',      [ClienteController::class, 'update'])->name('clientes.update');
     Route::delete('/clientes/{cliente}',   [ClienteController::class, 'destroy'])->name('clientes.destroy');
+
+    // Agenda — calendário de consultas por funcionário
+    Route::get('/agenda', [AgendaController::class, 'index'])->name('agenda.index');
+    Route::get('/agenda/create', [AgendaController::class, 'create'])->name('agenda.create');
+    Route::post('/agenda', [AgendaController::class, 'store'])->name('agenda.store');
+    Route::get('/agenda/events', [AgendaController::class, 'events'])->name('agenda.events');
+    Route::get('/agenda/{agenda}/edit', [AgendaController::class, 'edit'])->name('agenda.edit');
+    Route::put('/agenda/{agenda}', [AgendaController::class, 'update'])->name('agenda.update');
+    Route::delete('/agenda/{agenda}', [AgendaController::class, 'destroy'])->name('agenda.destroy');
 
     // Funcionários CRUD — admin only
     Route::middleware('admin.only')->group(function () {
