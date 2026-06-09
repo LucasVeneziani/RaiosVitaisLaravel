@@ -20,6 +20,17 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'laraveljutsu/zap' => 
+  array (
+    'aliases' => 
+    array (
+      'Zap' => 'Zap\\Facades\\Zap',
+    ),
+    'providers' => 
+    array (
+      0 => 'Zap\\ZapServiceProvider',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 

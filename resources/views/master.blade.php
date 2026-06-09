@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/master.css') }}">
     <title>Raios Vitais</title>
@@ -14,6 +15,7 @@
         <ul>
             <li><a href="{{ route('paineladmin.index') }}">PaginaPrincipal</a></li>
             <li><a href="{{ route('clientes.index') }}">Clientes</a></li>
+            <li><a href="{{ route('agenda.index') }}">Agenda</a></li>
             @if(session('auth_role') === 'admin')
             <li><a href="{{ route('funcionarios.index') }}">Funcionários</a></li>
             @endif
